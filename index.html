@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Informações sobre Viagens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Título Principal -->
+  <header>
+    <h1>Portal de Informações sobre Viagens</h1>
+    <p class="subtitle">Deseja saber mais sobre os destinos?</p>
+    <a href="#destinos" class="btn">Explorar Destinos</a>
+    <p class="subtitle">Para reservar passagens, visite nosso parceiro:</p>
+    <a href="https://queropassagem.com.br/" target="_blank" class="btn">Quero Passagem</a>
+  </header>
+
+  <!-- Calendário de Promoções -->
+  <section id="promocoes">
+    <h2>Calendário de Promoções</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Mês</th>
+          <th>Promoção</th>
+          <th>Desconto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Janeiro</td>
+          <td>Promoção de Verão</td>
+          <td>30%</td>
+        </tr>
+        <tr>
+          <td>Julho</td>
+          <td>Promoção de Inverno</td>
+          <td>25%</td>
+        </tr>
+        <tr>
+          <td>Dezembro</td>
+          <td>Fim de Ano</td>
+          <td>40%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Imagens de Destinos -->
+  <section id="destinos">
+    <h2>Imagens dos Destinos</h2>
+    <div class="destinos">
+      <div class="destino">
+        <img src="https://s2-casavogue.glbimg.com/wmx10D-zJ0yJlfOQN2zCsskvzHs=/0x0:2121x1414/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2024/V/0/AVCLAlTmePsqDfp2Qamg/melhores-praias-brasil-01.jpg" alt="Praia Tropical">
+        <p class="legenda">Praia Tropical: um dos destinos mais procurados.</p>
+      </div>
+      <div class="destino">
+        <img src="https://vocenaneve.com.br/wp-content/uploads/2021/10/mont-blanc-le-blanc.jpg" alt="Montanhas Nevadas">
+        <p class="legenda">Montanhas Nevadas: ideal para os amantes de frio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinos Populares -->
+  <section id="populares">
+    <h3>Destinos Populares</h3>
+    <ul>
+      <li>
+        <strong>Rio de Janeiro</strong>: Cidade famosa por suas praias, como Copacabana e Ipanema, e pelo Cristo Redentor.
+      </li>
+      <li>
+        <strong>Paris</strong>: Capital da França, conhecida pela Torre Eiffel, museus e gastronomia refinada.
+      </li>
+      <li>
+        <strong>Nova Iorque</strong>: Cidade vibrante nos EUA, famosa por sua vida cultural, Times Square e a Estátua da Liberdade.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Formulário de Contato -->
+  <section id="contato">
+    <h3>Entre em Contato</h3>
+    <form id="contactForm">
+      <input type="text" placeholder="Nome Completo" required>
+      <input type="email" placeholder="E-mail" required>
+      <select required>
+        <option value="" disabled selected>Selecione um destino</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="Paris">Paris</option>
+        <option value="Nova Iorque">Nova Iorque</option>
+      </select>
+      <textarea rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+</body>
+</html>
